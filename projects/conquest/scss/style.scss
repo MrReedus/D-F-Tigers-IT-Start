@@ -100,6 +100,7 @@ body {
 .header__logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .logo {
 }
@@ -123,10 +124,121 @@ body {
   color: $main-color;
   font-size: 14px;
   line-height: 16px;
+  transition: 0.2s;
+  &:hover {
+    color: green;
+    border-bottom: 1px solid $main-color; //!
+  }
 }
 .header__icons {
   display: flex;
   gap: 22px;
 }
+
 .header-icons {
+  svg {
+    cursor: pointer;
+    &:hover {
+      .header-icons__item {
+        fill: rgb(201, 199, 199);
+      }
+    }
+  }
+}
+
+.header-icons__item {
+  fill: #1b1a17;
+  transition: 0.2s ease-in;
+}
+
+//**main**//
+
+.collection {
+  background-image: url("/src/images/Ellipse.png");
+  background-repeat: no-repeat;
+  background-position: 48%;
+}
+.collection__container {
+  display: flex;
+  gap: 114px;
+  padding-right: 114px;
+}
+.collection__info {
+  padding-top: 236px;
+}
+.collection__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+.collection__subtitle {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 39px;
+}
+.collection__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  max-width: 207px;
+  margin-bottom: 20px;
+}
+.collection__button {
+  background-color: #444240;
+  &:hover {
+    background-color: lighten(#444240, 10);
+  }
+}
+.button {
+  width: 205px;
+  height: 64px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.collection__card {
+  position: relative;
+  img {
+    display: block;
+    max-width: 502px;
+    height: 805px;
+  }
+}
+
+.card__price,
+.card__description {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+}
+.card__price {
+  top: 138px;
+  left: 0;
+}
+.card__description {
+  text-transform: lowercase;
+  bottom: 116px;
+  right: -83px;
+}
+
+.card__line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
 }
