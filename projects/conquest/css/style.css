@@ -150,6 +150,7 @@ body {
   display: flex;
   gap: 114px;
   padding-right: 114px;
+  padding-left: 120px;
 }
 
 .collection__info {
@@ -273,4 +274,111 @@ body {
   .card__description {
     left: 300px;
   }
+}
+.popular__container {
+  padding-top: 79px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 86px;
+}
+
+.popular__title {
+  max-width: 306px;
+  margin: 0 auto;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+  margin-bottom: 5px;
+}
+
+.popular__button {
+  background: transparent;
+  width: 104px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 47px;
+  display: flex;
+  align-self: flex-end;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.popular__button:hover {
+  color: green;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.product__price {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  height: 12px;
+  margin-bottom: 2px;
+}
+.product__price::after {
+  content: "";
+  width: 7px;
+  height: 12px;
+  background-size: 7px 10px;
+  background-image: url("../src/icons/ruble.svg");
+  background-repeat: no-repeat;
+}
+
+.product__image img {
+  width: 313px;
+  height: 313px;
+}
+
+.product__button {
+  align-self: start;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: 0.2s ease;
+  margin-bottom: 39px;
+  cursor: pointer;
+}
+.product__button:hover {
+  color: green;
+}
+.product__button::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: rgb(139, 131, 113);
 }
