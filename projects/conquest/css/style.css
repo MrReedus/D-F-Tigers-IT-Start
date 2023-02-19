@@ -350,6 +350,7 @@ html {
 
 .popular__button {
   background: transparent;
+  color: #444240;
   width: 104px;
   font-family: "Roboto";
   font-style: normal;
@@ -415,6 +416,8 @@ html {
 }
 
 .product__button {
+  color: #444240;
+  background-color: transparent;
   align-self: start;
   font-family: "Playfair Display";
   font-style: normal;
