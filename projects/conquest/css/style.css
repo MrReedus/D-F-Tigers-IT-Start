@@ -812,7 +812,7 @@ html {
     width: 100%;
     height: 30%;
     background-color: hwb(110 93% 5%/0.95);
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     transform: translate(100%, 0);
     display: flex;
     flex-direction: column;
