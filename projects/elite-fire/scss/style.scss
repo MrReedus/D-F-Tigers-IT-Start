@@ -1,13 +1,120 @@
 //!VARIABLES
 
 //! FONTS
+@font-face {
+  font-family: "Lab grotesque";
+  src: url(/css/fonts/LabGrotesque/LabGrotesqueThin.woff) format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Lab grotesque";
+  src: url(/css/fonts/LabGrotesque/LabGrotesqueLight.woff) format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lab grotesque";
+  src: url(/css/fonts/LabGrotesque/LabGrotesqueRegular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lab grotesque";
+  src: url(/css/fonts/LabGrotesque/LabGrotesqueMedium.woff) format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Lab grotesque";
+  src: url(/css/fonts/LabGrotesque/LabGrotesqueBold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Scania Sans CY";
+  src: url(/css/fonts/ScaniaSansCY/ScaniaSansCYBold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Scania Sans CY";
+  src: url(/css/fonts/ScaniaSansCY/ScaniaSansCYRegular.woff) format("woff");
+  font-weight: 400;
+}
 
 @import "_Nullstyles.scss";
 
-// @import "_Header.scss";
+@import "_Header.scss";
 // @import "_Collection.scss";
 // @import "_Popular.scss";
 // @import "_Quality.scss";
 // @import "_News.scss";
 // @import "_Footer.scss";
 // @import "_Toggle-menu.scss";
+
+body {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  background: url("../src/images/bg.jpg");
+}
+
+//** intro **//
+
+.intro {
+}
+.intro__container {
+  background: url("../src/images/intro_backround.png") no-repeat;
+  background-position: top -12% right 14%;
+  background-size: 700px 429px;
+  padding-bottom: 242px;
+}
+.intro__title {
+  font-weight: 250;
+  font-size: 64px;
+  line-height: 70px;
+  max-width: 780px;
+  text-transform: uppercase;
+  background: linear-gradient(226.43deg, #ffffff 49.37%, rgba(255, 255, 255, 0) 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 29px;
+}
+.intro__price {
+  color: #ffcf7a;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 86px;
+  span {
+    font-size: 42px;
+  }
+}
+.intro__advantages {
+}
+
+.advantages {
+  display: flex;
+  gap: 40px;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 14px;
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+  max-width: 120px;
+}
