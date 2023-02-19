@@ -83,3 +83,9 @@
     gap: 65px * 0.3;
   }
 }
+
+@media (max-width: 575.98px) {
+  .header__menu {
+    display: none;
+  }
+}

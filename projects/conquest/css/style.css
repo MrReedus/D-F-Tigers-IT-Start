@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
-@media (max-width: 1279.98px) {
-  [class*=__container] {
-    padding: 0px 50px;
-  }
-}
 *,
 ::before,
 ::after {
@@ -138,6 +133,11 @@ html {
     gap: 19.5px;
   }
 }
+@media (max-width: 575.98px) {
+  .header__menu {
+    display: none;
+  }
+}
 .collection {
   background-image: url("../src/images/Ellipse.png");
   background-repeat: no-repeat;
@@ -260,9 +260,6 @@ html {
   .collection__subtitle {
     font-size: 25px;
   }
-  .collection__card {
-    position: relative;
-  }
   .collection__card img {
     max-width: 301.2px;
     height: 482.4px;
@@ -288,6 +285,45 @@ html {
   }
   .collection__card {
     order: -1;
+  }
+}
+@media (max-width: 575.98px) {
+  .collection__card {
+    flex-direction: column;
+  }
+  .collection__card img {
+    max-width: 200.8px;
+    height: 321.6px;
+  }
+  .collection__card .card__price,
+  .collection__card .card__description {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    align-items: center;
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    position: static;
+  }
+  .collection__card .card__price {
+    padding-top: 20px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+  }
+  .collection__card .card__price .card__line {
+    order: -1;
+    margin-right: 10px;
+  }
+  .collection__card .card__description {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    align-self: flex-start;
+  }
+  .collection__card .card__description .card__line {
+    order: 2;
   }
 }
 .popular__container {
@@ -495,20 +531,38 @@ html {
   }
   .quality__image {
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767.98px) {
+  .title {
+    font-size: 24px;
+  }
   .quality__wrapper {
     flex-direction: column;
+    jalign-items: center;
+  }
+  .quality__slider {
+    margin: 0 auto;
+  }
+  .quality__image img {
+    width: 494.95px;
+    height: 393.3px;
   }
   .quality__image {
-    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .quality__info {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .quality__image img {
+    width: 286.55px;
+    height: 227.7px;
   }
 }
 .news {
@@ -536,6 +590,10 @@ html {
   line-height: 27px;
   max-width: 376px;
   margin-bottom: 118px;
+}
+
+.news__contacts {
+  max-width: 93px;
 }
 
 .social {
@@ -579,6 +637,41 @@ html {
      object-fit: cover;
 }
 
+@media (max-width: 1279.98px) {
+  .news__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -moz-column-gap: 66px;
+         column-gap: 66px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .news__info {
+    padding-top: 40px;
+  }
+  .news__contacts {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .news__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+  .news__image {
+    grid-column: 1/2;
+  }
+  .news__image--big {
+    order: 50;
+    margin: 0 auto;
+    grid-row: 1/4;
+    grid-column: 2/4;
+  }
+}
 .footer {
   background-color: #444240;
   color: #ffffff;
@@ -607,6 +700,10 @@ html {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
+}
+
+.footer__list--contacts {
+  gap: 15px;
 }
 
 .footer__link {
@@ -638,13 +735,49 @@ html {
 }
 
 @media (max-width: 1279.98px) {
-  .news__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    -moz-column-gap: 66px;
-         column-gap: 66px;
+  .footer__container {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .footer__subtitle {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+  .footer__list--contacts {
+    gap: 5px;
+    flex-shrink: 0;
+  }
+  .footer__link {
+    min-width: 80px;
+  }
+  .footer-menu__item:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 1279.98px) {
+  [class*=__container] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768.98px) {
+  [class*=__container] {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
