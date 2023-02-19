@@ -70,7 +70,6 @@
   width: 5px;
   height: 10px;
   cursor: pointer;
-
   transform: rotate(180deg) translate(0, -2px);
 }
 
@@ -107,8 +106,16 @@
 }
 
 @media (max-width: 767.98px) {
+  .quality {
+    margin-bottom: 20px;
+  }
+
   .quality__container {
+    padding-top: 25px;
     background-position: 80vw 0vw;
+  }
+  .quality__title {
+    margin-bottom: 25px;
   }
   .title {
     font-size: 24px;

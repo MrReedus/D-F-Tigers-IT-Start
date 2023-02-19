@@ -102,7 +102,7 @@
   align-items: center;
   gap: 18px;
   transition: 0.2s ease;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
   cursor: pointer;
   &:hover {
     color: green;
@@ -124,7 +124,7 @@
 
 @media (max-width: 767.98px) {
   .popular__container {
-    padding-top: 45px;
+    padding-top: 10px;
     padding-bottom: 40px;
   }
 

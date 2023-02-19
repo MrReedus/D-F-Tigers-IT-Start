@@ -90,6 +90,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .news__title {
+    margin-bottom: 25px;
+  }
   .news__image {
     grid-column: 1 / 2;
   }
@@ -97,5 +100,8 @@
   .news__image--big {
     grid-row: 1 / 4;
     grid-column: 2 / 4;
+  }
+  .news__description {
+    margin-bottom: 40px;
   }
 }
