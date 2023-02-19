@@ -49,8 +49,6 @@
   justify-content: space-between;
 }
 
-.products__item {
-}
 .product {
   width: 370px;
   display: flex;
@@ -118,5 +116,18 @@
 @media (max-width: 1279.98px) {
   .products__item {
     margin: 0 auto;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .popular__container {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  .product__image {
+    img {
+      width: 313 * 0.7px;
+      height: 313 * 0.7px;
+    }
   }
 }

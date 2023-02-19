@@ -16,7 +16,7 @@
 }
 
 .quality__description {
-  min-width: 376px;
+  max-width: 376px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -93,7 +93,6 @@
   }
   .quality__wrapper {
     flex-direction: column;
-    jalign-items: center;
   }
   .quality__slider {
     margin: 0 auto;
@@ -121,8 +120,8 @@
 @media (max-width: 575.98px) {
   .quality__image {
     img {
-      width: 521px * 0.55;
-      height: 414px * 0.55;
+      width: 521px * 0.5;
+      height: 414px * 0.5;
     }
   }
 }
