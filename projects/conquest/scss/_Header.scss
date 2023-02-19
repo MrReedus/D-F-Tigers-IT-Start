@@ -1,5 +1,3 @@
-//**HEADER**//
-
 .header__logo {
   font-family: "Playfair Display";
   font-style: normal;
@@ -14,22 +12,19 @@
   display: flex;
   justify-content: space-between;
 }
-.header__logo {
-}
 
 .logo {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
+
 .logo__icon {
   margin-right: 3px;
 }
+
 .logo__text {
   color: $main-color;
-}
-
-.header__navigation {
 }
 
 .header__menu {
@@ -61,6 +56,34 @@
       transition: 0.2s ease-in;
       fill: #d63a3a;
     }
+  }
+}
+
+.user-panel__item--favorites {
+  position: relative;
+  &:hover {
+    path {
+      transition: 0.2s ease-in;
+      fill: #d63a3a;
+      stroke: #d63a3a;
+    }
+  }
+}
+.favorites-svg-wrapper {
+  position: relative;
+  &::after {
+    content: "1";
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: #e6c8b4;
+    font-size: 8px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5px;
+    right: -5px;
   }
 }
 

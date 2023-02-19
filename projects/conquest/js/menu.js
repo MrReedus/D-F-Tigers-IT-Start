@@ -12,11 +12,11 @@ closeBtn.addEventListener("click", () => {
   menu.classList.remove("_active");
 });
 
-// links.forEach((item) => {
-//     item.addEventListener('click', () => {
-//         menu.classList.remove('_active')
-//     })
-// })
+links.forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("_active");
+  });
+});
 
 content.addEventListener("click", () => {
   menu.classList.remove("_active");

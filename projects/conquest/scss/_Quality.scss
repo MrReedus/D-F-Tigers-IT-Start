@@ -1,6 +1,19 @@
 .quality {
   margin-bottom: 71px;
 }
+
+.quality__container {
+  padding-top: 86px;
+
+  background: url("../src/images/Ellipse-small.png"), url("../src/images/Ellipse-big.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+
+  // background-position: 85% -20%;
+  // background-size: auto auto;
+  // background-repeat: no-repeat;
+}
+
 .quality__wrapper {
   display: flex;
   column-gap: 70px;
@@ -41,21 +54,24 @@
 
 .slider-buttons {
   display: flex;
+  align-items: flex-start;
   column-gap: 20px;
 }
-.slider-buttons__item {
-}
+
 .slider-buttons__item--back {
   background: url("../src/icons/arrow_left.svg");
   width: 5px;
   height: 10px;
   cursor: pointer;
 }
+
 .slider-buttons__item--next {
-  background: url("../src/icons/arrow_right.svg");
+  background: url("../src/icons/arrow_left.svg");
   width: 5px;
   height: 10px;
-  cursor: pointer; //! кнопка отображдена неполностью
+  cursor: pointer;
+
+  transform: rotate(180deg) translate(0, -2px);
 }
 
 .slider-buttons__text {
@@ -66,6 +82,7 @@
   font-size: 12px;
   line-height: 16px;
 }
+
 .quality__image {
   margin-bottom: 20px;
   img {
@@ -78,6 +95,8 @@
 
 @media (max-width: 1279.98px) {
   .quality__wrapper {
+    justify-content: center;
+    margin: 0 auto;
     flex-wrap: wrap;
   }
 
@@ -88,15 +107,21 @@
 }
 
 @media (max-width: 767.98px) {
+  .quality__container {
+    background-position: 80vw 0vw;
+  }
   .title {
     font-size: 24px;
   }
+
   .quality__wrapper {
     flex-direction: column;
   }
+
   .quality__slider {
     margin: 0 auto;
   }
+
   .quality__image {
     img {
       width: 521px * 0.95;
@@ -107,17 +132,19 @@
   .quality__image {
     margin-bottom: 20px;
   }
+
   .quality__info {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .quality__button {
-  }
 }
 
 @media (max-width: 575.98px) {
+  .quality__container {
+    background-position: 80vw 0vw;
+  }
   .quality__image {
     img {
       width: 521px * 0.5;

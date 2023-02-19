@@ -1,12 +1,8 @@
-//** POPULAR **//
-
-.popular {
-}
 .popular__container {
   padding-top: 79px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 86px;
+  // padding-bottom: 86px;
 }
 
 .popular__title {
@@ -14,6 +10,7 @@
   margin: 0 auto;
   margin-bottom: 5px;
 }
+
 .title {
   font-family: "Playfair Display";
   font-style: normal;
@@ -42,8 +39,7 @@
     color: green;
   }
 }
-.popular__items {
-}
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -55,6 +51,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .product__title {
   font-family: "Playfair Display";
   font-style: normal;
@@ -64,6 +61,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
+
 .product__price {
   font-family: "Prata";
   font-style: normal;
@@ -90,6 +88,7 @@
     height: 313px;
   }
 }
+
 .product__button {
   color: #444240;
   background-color: transparent;
@@ -122,11 +121,13 @@
     align-items: center;
   }
 }
+
 @media (max-width: 767.98px) {
   .popular__container {
     padding-top: 45px;
     padding-bottom: 40px;
   }
+
   .product__image {
     img {
       width: 313 * 0.7px;
