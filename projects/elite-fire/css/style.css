@@ -1,36 +1,36 @@
 @font-face {
   font-family: "Lab grotesque";
-  src: url(/css/fonts/LabGrotesque/LabGrotesqueThin.woff) format("woff");
+  src: url(../css/fonts/LabGrotesque/LabGrotesqueThin.woff) format("woff");
   font-weight: 100;
 }
 @font-face {
   font-family: "Lab grotesque";
-  src: url(/css/fonts/LabGrotesque/LabGrotesqueLight.woff) format("woff");
+  src: url(../css/fonts/LabGrotesque/LabGrotesqueLight.woff) format("woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "Lab grotesque";
-  src: url(/css/fonts/LabGrotesque/LabGrotesqueRegular.woff) format("woff");
+  src: url(../css/fonts/LabGrotesque/LabGrotesqueRegular.woff) format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "Lab grotesque";
-  src: url(/css/fonts/LabGrotesque/LabGrotesqueMedium.woff) format("woff");
+  src: url(../css/fonts/LabGrotesque/LabGrotesqueMedium.woff) format("woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "Lab grotesque";
-  src: url(/css/fonts/LabGrotesque/LabGrotesqueBold.woff) format("woff");
+  src: url(../css/fonts/LabGrotesque/LabGrotesqueBold.woff) format("woff");
   font-weight: 700;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: url(/css/fonts/ScaniaSansCY/ScaniaSansCYBold.woff) format("woff");
+  src: url(../css/fonts/ScaniaSansCY/ScaniaSansCYBold.woff) format("woff");
   font-weight: 700;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: url(/css/fonts/ScaniaSansCY/ScaniaSansCYRegular.woff) format("woff");
+  src: url(../css/fonts/ScaniaSansCY/ScaniaSansCYRegular.woff) format("woff");
   font-weight: 400;
 }
 *,
@@ -168,19 +168,10 @@ html {
   transform: translateX(1px);
 }
 
-body {
-  font-family: "Lab Grotesque";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #fff;
-  background: url("../src/images/bg.jpg");
-}
-
 .intro__container {
-  background: url("../src/images/intro_backround.png") no-repeat;
-  background-position: top -12% right 14%;
+  padding-top: 40px;
+  background: url("../src/images/intro_backround.png") no-repeat, url("../src/images/intro_light.png ") no-repeat;
+  background-position: top -12% right 14%, top -14% right 17%;
   background-size: 700px 429px;
   padding-bottom: 242px;
 }
@@ -235,4 +226,41 @@ body {
   color: #fff;
   text-align: center;
   max-width: 120px;
+}
+
+body {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  background: url("../src/images/bg.jpg");
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 250;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
+
+.about__title {
+  text-align: center;
+  max-width: 671px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about__subtitle {
+  max-width: 822px;
 }
