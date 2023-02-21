@@ -263,4 +263,31 @@ body {
 
 .about__subtitle {
   max-width: 822px;
+  margin: 0 auto;
+}
+
+.about__image {
+  margin-bottom: 58px;
+}
+
+.about__pluses {
+  margin-bottom: 200px;
+}
+
+.pluses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pluses__item {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.pluses__description {
+  max-width: 176px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
